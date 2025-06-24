@@ -35,11 +35,11 @@ Whether you're a company assessing compliance obligations, an NGO seeking regula
 | Component      | Description                                                                 |
 |----------------|-----------------------------------------------------------------------------|
 | **Frontend**   | Streamlit / Web UI *(optional)*                                             |
-| **LLM**        | OpenAI GPT-4 / Open Source LLM (e.g. Mistral, LLaMA)                        |
+| **LLM**        | Mistral                       |
 | **RAG Engine** | LangChain / LlamaIndex / Haystack                                           |
 | **Vector Store** | FAISS / Chroma / Pinecone                                                 |
 | **Embedding Model** | OpenAI / HuggingFace / SentenceTransformers                            |
-| **Document Sources** | PDFs, webpages, and internal FAQs                                     |
+| **Document Sources** | EUDR April 2025 Guidelines doc, FAQ doc                               |
 
 ---
 
