@@ -1,71 +1,52 @@
-# RAG Chatbot with Mistral AI
+# EUDR Chatbot — Intelligent FAQ Assistant for the EU Deforestation Regulation
 
-A Retrieval-Augmented Generation (RAG) chatbot built with Flask and Mistral AI.
+## Overview
 
-**Created by [Halim Madi](https://www.halimmadi.com)**
+The **EUDR Chatbot** is a custom Retrieval-Augmented Generation (RAG) system designed to help users easily access information related to the **EU Deforestation Regulation (EUDR)**. It combines a powerful language model with a curated knowledge base of official documentation, guidelines, and frequently asked questions to provide accurate, conversational answers on-demand.
 
-This is a sample project designed for students, workshops, and educational purposes. Feel free to use, modify, and distribute this code as you wish for learning and development.
+Whether you're a company assessing compliance obligations, an NGO seeking regulatory clarity, or a researcher exploring implementation details, this chatbot delivers fast, contextualized insights from trustworthy sources.
 
-## About the Creator
+---
 
-- **Website**: [www.halimmadi.com](https://www.halimmadi.com)
-- **Instagram**: [@yalla_halim](https://www.instagram.com/yalla_halim/)
+## Features
 
-## Setup
+- 💬 **Conversational Q&A**: Ask questions about EUDR requirements, definitions, and procedures.
+- 📚 **Documentation-backed Answers**: All responses are grounded in source documents, such as:
+  - EU Commission guidance
+  - Regulatory texts
+  - Official FAQs and interpretations
+- 🔍 **Semantic Search + LLM Reasoning**: Combines document retrieval with natural language generation for relevant, contextual responses.
 
-1. Clone the repository
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Create a `.env` file with your Mistral API key:
-   ```
-   MISTRAL_API_KEY=your_api_key_here
-   ```
-5. Add your text file as `essay.txt` in the project root
+---
 
-## Local Development
+## Example Questions
 
-Run the Flask application:
+- *“What are the key due diligence requirements for operators?”*
+- *“When does the EUDR enter into force for smallholders?”*
+- *“How is deforestation defined under the EUDR?”*
+- *“What evidence is required to demonstrate product origin?”*
+
+---
+
+## Tech Stack
+
+`(#todo)`
+
+| Component      | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Frontend**   | Streamlit / Web UI *(optional)*                                             |
+| **LLM**        | OpenAI GPT-4 / Open Source LLM (e.g. Mistral, LLaMA)                        |
+| **RAG Engine** | LangChain / LlamaIndex / Haystack                                           |
+| **Vector Store** | FAISS / Chroma / Pinecone                                                 |
+| **Embedding Model** | OpenAI / HuggingFace / SentenceTransformers                            |
+| **Document Sources** | PDFs, webpages, and internal FAQs                                     |
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+
 ```bash
-python app.py
-```
-
-The application will be available at `http://localhost:5001`
-
-## Deployment to Vercel
-
-1. Push your code to GitHub
-2. Connect your GitHub repository to Vercel
-3. Add your environment variables in the Vercel dashboard:
-   - `MISTRAL_API_KEY`: Your Mistral API key
-4. Deploy!
-
-## Environment Variables
-
-- `MISTRAL_API_KEY`: Your Mistral AI API key (required)
-
-## Project Structure
-
-- `app.py`: Main Flask application
-- `templates/`: HTML templates
-- `static/`: Static files (CSS, JS)
-- `essay.txt`: Source text for the RAG system
-- `requirements.txt`: Python dependencies
-- `vercel.json`: Vercel deployment configuration
-
-## Usage and Licensing
-
-This project is provided as a learning resource for students and workshop participants. You are free to:
-
-- Use this code for educational purposes
-- Modify and adapt it for your own projects
-- Share it with others for learning
-- Use it in workshops and tutorials
-
-Feel free to reach out to [Halim Madi](https://www.halimmadi.com) with any questions or feedback! 
+git clone https://github.com/your-org/wri-eudr-bot.git
+cd wri-eudr-bot
